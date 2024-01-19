@@ -21,7 +21,7 @@
         }
 
         #login {
-            height: 150px;
+            height: 180px;
             width: 300px;
             padding-top: 15px;
             box-shadow: 2px 2px 5px black;
@@ -31,6 +31,10 @@
             text-align: start;
             background-color: rgb(192, 190, 190);
             margin-top: 1px;
+        }
+
+        .clear {
+            margin-top: -25px;
         }
     </style>
 </head>
@@ -55,25 +59,30 @@
                 did not
                 have an account.</p>
         </div>
-        <form action="./mainpage.html">
-            <center>
-                <div id="login">
-                    <label for="username">Username</label><br>
-                    <input type="text"><br>
-                    <label for="password">Password</label> <br>
-                    <input type="password"><br><br>
-                    <button>login</button>
-                </div>
-
-            </center>
-        </form>
         <center>
-           <div class="clear">
-            <form action="./index.html">
-                <button>Clear</button>
-            </form>
-           </div>
+            <div id="login">
+                <form style="margin-bottom: 20px;" action="./mainpage.html">
+                    <div>
+                        <label for="username">Username</label><br>
+                        <input type="text">
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <label for="password">Password</label> <br>
+                        <input type="password">
+                    </div>
+                    <button>login</button>
+                </form>
+
+                <form action="./index.html">
+                    <button>Clear</button>
+                </form>
+
+            </div>
         </center>
+
+
+
+
     </section>
 </body>
 
