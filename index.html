@@ -21,13 +21,13 @@
         }
 
         #login {
-            background-color: lightgray;
             height: 150px;
             width: 300px;
             padding-top: 15px;
-            border: 2px gray solid;
+            box-shadow: 2px 2px 5px black;
         }
-        h4{
+
+        h4 {
             text-align: start;
             background-color: rgb(192, 190, 190);
             margin-top: 1px;
@@ -42,30 +42,38 @@
     <nav>
         <h4>
             <a href="./welcomepage.html">Home</a><br><br>
-            <a href="./SignIn.html" > Sign-in</a><br><br>
+            <a href="./SignIn.html"> Sign-in</a><br><br>
             <a href="">About</a><br><br>
             <a href="">FAQ</a><br>
         </h4>
-       
+
     </nav>
 
     <section>
         <div id="greetings">
-            <p><a href="./welcomepage.html">Login</a> to your account below.<a href="./SignIn.html">Sign in</a> if you did not
+            <p><a href="./welcomepage.html">Login</a> to your account below.<a href="./SignIn.html">Sign in</a> if you
+                did not
                 have an account.</p>
         </div>
         <form action="./mainpage.html">
             <center>
                 <div id="login">
-                    <label for="username">Username</label><br> 
+                    <label for="username">Username</label><br>
                     <input type="text"><br>
                     <label for="password">Password</label> <br>
                     <input type="password"><br><br>
                     <button>login</button>
-                    <button>Clear</button>
                 </div>
+
             </center>
         </form>
+        <center>
+           <div class="clear">
+            <form action="./index.html">
+                <button>Clear</button>
+            </form>
+           </div>
+        </center>
     </section>
 </body>
 
